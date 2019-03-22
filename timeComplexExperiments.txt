@@ -1,0 +1,46 @@
+This is documentation for the timeComplexity program for java.
+I chose java to demonstrate the concept of time complexity because 
+nanotime is a built in java function that requires a simple import. 
+
+The following demonstration will contain several methods. These methods 
+will be called from a seperate source file so compiling will be faster. 
+
+The main source file will be where we execute the methods that perform arithmetic 
+operations that result in the following time complexities:
+(Sorted from best to worst)
+1. O(1); Represents imediate time
+2. O(log_n);
+3. O(n); Linear Time
+4. O(n log_n);
+5. O(n^2); Exponential time
+6. O(2^n); 
+7. O(n!); 
+
+Concepts to understand: 
+(n) represents the size of the given array. 
+
+Question: How can we reprsent our data in a graph based off of each time complexity? 
+Answer: The x-axis will represent the number of elements in a given array and calculate the time it 
+        takes in miliseconds to complete a certain iteration. The time it takes to complete will be represented by the y-axis. 
+        We can save this value as we begin processing from 2 elements to several hundred elements. 
+        Upon saving that data we can graph it using excel with a line graph. So we will begin measuring 
+        the time it takes to complete array processing with array elements starting from 
+        2 to 4 to 8 and increase accordingly. So for each algorithim, we will increase array size at rate of
+        (2^2). This should provide a plenty of data measurments for our graph.
+
+Question: How will we gather the data?
+Answer: Well, we are going to manually log each time we perform an iteration just to keep it simple. 
+        I want to ensure that the program we create only performs crucial tasks such as calculating time and performing
+        time complexiy algorithims. How we will do this is we will create several methods for each time 
+        complexity concept and measure the time for each using nanotime. We will graph it in excel using a table and line graph that
+        pulls from said table. Our data labels will be each time complexity. Our measurments/axis will be 
+        (x/y : elements/time respectivly).
+
+Goal: The objective here is to gain a better understanding of time complexity as it is 
+        very important for optimization in large programs.
+        There are many issues with new programmers that result in bad optimization but good concept. Many times this alone prevents
+        them from getting a job. I wante to demonstrate each time complexity using random number of arrays. 
+
+Difficulty: TBA. I am not sure how difficult this will be but I assume it should be Easy to Meduim for my skill set. 
+
+Lets begin. 
